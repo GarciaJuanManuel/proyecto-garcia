@@ -107,6 +107,7 @@ header div{
 /*aside*/
 .row{
     display: flex;
+    flex: 100%;
     flex-wrap: wrap;
 }
 
@@ -197,12 +198,14 @@ aside p{
     background-color:rgba(43, 163, 43, 0.534);
 }
 
-.testimonios img{
-    width: 100%;
+.usuarios-test img{
+    width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-}
+} 
+
+
 
 /* MEDIAQUERY */
 
