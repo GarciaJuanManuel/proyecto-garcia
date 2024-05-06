@@ -9,9 +9,9 @@
 
 body {
     margin: 0 auto;
-    font-family: Arial, sans-serif; /* Fuente predeterminada de Steam */
-    background-color: white; /* Color de fondo similar al de Steam */
-    color: black; /* Color de texto */
+    font-family: Arial, sans-serif; 
+    background-color: white; 
+    color: black; 
 
 }
 
@@ -82,24 +82,6 @@ header div{
 .navbar-jm a:hover{
     background-color: rgba(15, 15, 15, 0.514);
 }
-
-
-
-/* Media Query para menú hamburguesa */
-/* Ocultar lista de navegación en pantallas pequeñas */
-@media (max-width: 700px) {
-    .navbar-toggler {
-        display: block; /* Mostrar el botón del menú hamburguesa */
-    }
-
-    .collapse {
-        display: none; /* Ocultar la lista de navegación por defecto */
-    }
-}
-
-
-
-
 
 
 /* CSS Main */
@@ -212,18 +194,6 @@ aside p{
 } 
 
 
-
-/* MEDIAQUERY */
-
-/* @media (max-width: 700px){
-    .navbar ul{
-        display: flex;
-        flex-direction: column;
-    }
-}
- */
-
-
 /* CSS Tienda */
 
 .titulo-tienda{
@@ -239,9 +209,11 @@ aside p{
 
 .container-products{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     text-align: center;
+    justify-content: center;
 }
 
 .product{
@@ -328,117 +300,188 @@ aside p{
     height: 30px;
 } */
 
+/* NOSOTROS */
 
-/** FORMULARIO DE CONTACTO**/
-
-
-/* .container {
-    width: 400px;
-    margin: 50px auto;
+.section-nosotros{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "quienes-somos quienes-somos quienes-somos"
+    "vapeando1 quienes-somos-info vapeando2";
+    gap: 10px;
+    padding: 15px;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.quienes-somos img{
+    height: 100px;
+    object-fit: contain;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
+.section-nosotros img{
     width: 100%;
-    padding: 10px;
-    border: 1px solid #2b2b2b;
-    border-radius: 5px;
-    background-color: #2b2b2b;
-    color: #c6d4df;
-    outline: none;
+    height: 100%;
+    object-fit: cover;
 }
 
-.form-group textarea {
-    resize: none;
+.quienes-somos{
+    grid-area: quienes-somos;
+    height: 100px;
+    object-fit: contain;
 }
 
-.form-group input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #00adee;
-    color: #fff;
-    font-size: 16px;
-} */
-/* 
-.container-group {
-    width: 400px;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.vapeando1{
+    grid-area: vapeando1;
 }
 
-.form-group {
-    margin-bottom: 20px;
-    width: 100%;
+.vapeando1 img{
+    object-fit: contain;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #2b2b2b;
-    border-radius: 5px;
-    background-color: #2b2b2b;
-    color: #c6d4df;
-    outline: none;
+
+.quienes-somos-info{
+    grid-area: quienes-somos-info;
+    text-decoration:solid;
 }
 
-.form-group textarea {
-    resize: none;
+.vapeando2{
+    grid-area: vapeando2;
 }
 
-.form-group input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #00adee;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+.quienes-somos-info{
+    font-size: 20px;
 }
 
-.form-group input:hover[type="submit"] {
-    background-color: #0c84af;
-} */
 
+
+/* Media Query para pantallas grandes */
+@media (max-width: 1024px) {
+    aside {
+        flex: 100%; 
+    }
+
+    .vendidos img {
+        max-width: 100%; 
+    }
+
+    .section-nosotros{
+        display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "quienes-somos quienes-somos quienes-somos"
+        "vapeando1 quienes-somos-info vapeando2";
+        gap: 10px;
+        padding: 15px;
+    }
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+
+}
 
 
 @media (max-width: 744px) {
+
+    .navbar-jm {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-jm ul {
+        padding: 0; 
+    }
+
+    .navbar-jm li {
+        display: block; 
+        margin-bottom: 0px; 
+    }
+
+    .navbar-jm a {
+        display: block; 
+    }
+
+    .navbar-jm a:hover{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
     aside {
-        flex: 100%; /* Cambiamos el ancho de aside al 100% en pantallas pequeñas */
+        flex: 100%; 
     }
 
     .vendidos {
-        flex: 100%; /* Cambiamos el ancho de vendidos al 100% en pantallas pequeñas */
+        flex: 100%; 
+    }
+    
+    .section-nosotros{
+        display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "quienes-somos quienes-somos"
+        "vapeando1 vapeando1"
+        "quienes-somos-info quienes-somos-info"
+        "vapeando2 vapeando2" ;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        text-align: center;
     }
 }
 
 /* Media Query para pantallas muy pequeñas */
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     aside {
-        flex: 100%; /* Cambiamos el ancho de aside al 100% en pantallas muy pequeñas */
+        flex: 100%; 
+    }
+    
+    .vendidos img {
+        max-width: 100%; 
+    }
+    .section-nosotros{
+        display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "quienes-somos"
+        "vapeando1 "
+        "quienes-somos-info"
+        "vapeando2" ;
+        gap: 10px;
+        padding: 15px;
     }
 
-    .vendidos img {
-        max-width: 100%; /* Hacemos que la imagen ocupe el ancho completo en pantallas muy pequeñas */
+    .quienes-somos-info{
+        font-size: 15px;
+    }
+
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        text-align: center;
+
     }
 }
 
-/* Media Query para pantallas grandes */
-@media (max-width: 1000px) {
-    aside {
-        flex: 100%; /* Cambiamos el ancho de aside al 100% en pantallas muy pequeñas */
-    }
 
-    .vendidos img {
-        max-width: 100%; /* Hacemos que la imagen ocupe el ancho completo en pantallas muy pequeñas */
-    }
-
+.section-suc{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
+    
 }
