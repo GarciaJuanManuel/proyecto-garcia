@@ -51,6 +51,10 @@ header div{
     font-size: 20px;
 }
 
+.texto-chico{
+    display: block;
+}
+
 
 
 
@@ -355,11 +359,29 @@ aside p{
     font-size: 20px;
 }
 
+@media (max-width: 1440px) {
+    .texto-chico{
+        display: none;
+    }
+
+    
+}
 
 
 @media (max-width: 1024px) {
     aside {
         flex: 100%; 
+        justify-content: center;
+        text-align: center;
+    }
+
+    aside p{
+        padding: 10px;
+    }
+
+    aside img{
+        width: 100%;
+        height: 300px;
     }
 
     .vendidos img {
@@ -398,6 +420,14 @@ aside p{
 
 @media (max-width: 760px) {
 
+    .texto-chico{
+        display: block;
+    }
+
+    .texto-grande{
+        display: none;
+    }
+
     .testimonios{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -406,6 +436,10 @@ aside p{
         text-align: center;
 
         background-color:rgba(43, 163, 43, 0.534);
+    }
+
+    .vendidos{
+        
     }
 
     .navbar-jm {
@@ -461,7 +495,18 @@ aside p{
     }
 }
 
+@media (max-width: 550px){
+    header p{
+        display: none;
+    }
+}
+
+
 @media (max-width: 425px) {
+
+    header h1{
+        font-size: 30px;
+    }
     
     .vendidos img {
         max-width: 100%; 
@@ -479,13 +524,6 @@ aside p{
         text-align: center;
         background-color:rgba(43, 163, 43, 0.534);
     }
-
-    .usuarios-test {
-        width: 150px;
-        height: 150px   ;
-        border-radius: 50%;
-        overflow: hidden;
-    } 
 
     .section-nosotros{
         display: grid;
