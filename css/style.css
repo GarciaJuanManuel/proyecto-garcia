@@ -56,30 +56,30 @@ header div{
 
 /* CSS Navbar */
 
-.navbar {
+.navbar-jm {
     display: flex;
     justify-content: center;
     background-color: gray;
 }
 
-.navbar ul {
+.navbar-jm ul {
     list-style-type: none;
     padding: 14px 20px;
     margin: 0;
 }
 
-.navbar li {
+.navbar-jm li {
     display: inline;
 }  
 
-.navbar a {
+.navbar-jm a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     padding: 10px;
 }
 
-.navbar a:hover{
+.navbar-jm a:hover{
     background-color: rgba(15, 15, 15, 0.514);
 }
 
@@ -103,6 +103,12 @@ header div{
 
 
 /* CSS Main */
+
+main h1{
+    text-align: center;
+    padding: .625rem;
+}
+
 
 /*aside*/
 .row{
@@ -358,7 +364,7 @@ aside p{
     color: #fff;
     font-size: 16px;
 } */
-
+/* 
 .container-group {
     width: 400px;
     margin: 50px auto;
@@ -400,7 +406,7 @@ aside p{
 
 .form-group input:hover[type="submit"] {
     background-color: #0c84af;
-}
+} */
 
 
 
