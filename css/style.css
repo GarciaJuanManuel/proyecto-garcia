@@ -103,6 +103,7 @@ aside{
     flex: 30%;
     padding: 20px;
     background-color: #aaabac;
+    order: 2;
 }
 
 aside img{
@@ -149,6 +150,7 @@ aside p{
     flex: 70%;
     padding: 20px;
     background-color: #fbfdff;
+    order: 1;
 }
 
 .vendidos img{
@@ -355,7 +357,6 @@ aside p{
 
 
 
-/* Media Query para pantallas grandes */
 @media (max-width: 1024px) {
     aside {
         flex: 100%; 
@@ -363,6 +364,15 @@ aside p{
 
     .vendidos img {
         max-width: 100%; 
+    }
+
+    .testimonios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 15px;
+        text-align: center;
+        background-color:rgba(43, 163, 43, 0.534);
     }
 
     .section-nosotros{
@@ -386,7 +396,17 @@ aside p{
 }
 
 
-@media (max-width: 744px) {
+@media (max-width: 760px) {
+
+    .testimonios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 5px;
+        text-align: center;
+
+        background-color:rgba(43, 163, 43, 0.534);
+    }
 
     .navbar-jm {
         flex-direction: column;
@@ -441,15 +461,32 @@ aside p{
     }
 }
 
-/* Media Query para pantallas muy pequeñas */
 @media (max-width: 425px) {
-    aside {
-        flex: 100%; 
-    }
     
     .vendidos img {
         max-width: 100%; 
     }
+
+    aside {
+        flex: 100%; 
+    }
+    
+    .testimonios{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 15px;
+        text-align: center;
+        background-color:rgba(43, 163, 43, 0.534);
+    }
+
+    .usuarios-test {
+        width: 150px;
+        height: 150px   ;
+        border-radius: 50%;
+        overflow: hidden;
+    } 
+
     .section-nosotros{
         display: grid;
         width: 95%;
@@ -478,10 +515,34 @@ aside p{
 }
 
 
+/* Sucursal*/ 
+
 .section-suc{
     display: flex;
     padding: 10px;
     gap: 20px;
     justify-content: center;
     
+}
+
+.section-suc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.section-suc h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.section-suc p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.section-suc iframe {
+    max-width: 100%;
+    border: none;
 }
