@@ -1,0 +1,74 @@
+// Main styles
+main {
+    h1 {
+      text-align: center;
+      padding: .625rem;
+    }
+  }  
+  // Aside styles
+  .row {
+    @include flex-container(flex, 100%, wrap);
+  }  
+  aside {
+    @include flex-container(flex, 30%, null, 2);
+    @include padded-container(20px, #aaabac);  
+    img {
+      @include responsive-img(100%, auto, contain, 10px);
+    }  
+    h2, h3 {
+      font-size: 22px;
+      padding: 10px;
+    }  
+    section {
+      padding-bottom: 25px;
+    }  
+    h3 {
+      font-size: 19px;
+    }  
+    p {
+      font-size: 15px;
+      padding-left: 10px;
+    }
+  }
+  
+  // Section styles
+  .sub-estrella {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 50px;
+  }  
+  .img-div-container {
+    display: flex;
+  }  
+  .vendidos {
+    @include flex-container(flex, 70%, null, 1);
+    @include padded-container(20px, #fbfdff);  
+    img {
+      @include responsive-img(100%, 300px);
+    }
+  }  
+  .estrella {
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+  }  
+  .info-estrella-1,
+  .info-estrella-2 {
+    @include padded-container(10px, rgba(0, 0, 0, 0.116), 10px);
+  }  
+  // Testimonios styles
+  .testimonios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(43, 163, 43, 0.534);
+  }  
+  .usuarios-test {
+    img {
+      @include responsive-img(200px, 200px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }

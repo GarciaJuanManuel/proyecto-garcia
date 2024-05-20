@@ -1,0 +1,30 @@
+// Mixin para contenedores con padding y border-radius
+@mixin padded-container($padding, $bg-color: null, $border-radius: 0) {
+    padding: $padding;
+    @if $bg-color {
+      background-color: $bg-color;
+    }
+    border-radius: $border-radius;
+  }
+  
+  // Mixin para imágenes
+  @mixin responsive-img($width, $height, $object-fit: contain, $padding-left: 0) {
+    width: $width;
+    height: $height;
+    object-fit: $object-fit;
+    padding-left: $padding-left;
+  }
+  
+  // Mixin para flex containers
+  @mixin flex-container($display: flex, $flex: null, $flex-wrap: null, $order: null) {
+    display: $display;
+    @if $flex {
+      flex: $flex;
+    }
+    @if $flex-wrap {
+      flex-wrap: $flex-wrap;
+    }
+    @if $order {
+      order: $order;
+    }
+  }
