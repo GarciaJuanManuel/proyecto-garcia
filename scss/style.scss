@@ -1,1 +1,7 @@
-@import "./base/reset"
+@import "./base/reset";
+
+@import "./layouts/main-index";
+@import "./layouts/header-index";
+@import "./layouts/header-pag-sec";
+
+@import 'components/navbar';
