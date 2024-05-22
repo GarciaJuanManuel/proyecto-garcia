@@ -1,30 +1,45 @@
+
 // Main styles
 main {
     h1 {
       text-align: center;
       padding: .625rem;
     }
-  }  
+  }
+  
   // Aside styles
   .row {
-    @include flex-container(flex, 100%, wrap);
-  }  
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+  }
+  
   aside {
-    @include flex-container(flex, 30%, null, 2);
-    @include padded-container(20px, #aaabac);  
+    flex: 30%;
+    padding: 20px;
+    background-color: #aaabac;
+    order: 2;
+  
     img {
-      @include responsive-img(100%, auto, contain, 10px);
-    }  
-    h2, h3 {
+      width: 100%;
+      object-fit: contain;
+      padding-left: 10px;
+    }
+  
+    h2 {
       font-size: 22px;
       padding: 10px;
-    }  
+    }
+  
     section {
       padding-bottom: 25px;
-    }  
+    }
+  
     h3 {
       font-size: 19px;
-    }  
+      padding: 10px;
+    }
+  
     p {
       font-size: 15px;
       padding-left: 10px;
@@ -36,26 +51,39 @@ main {
     text-align: center;
     text-decoration: underline;
     padding-top: 50px;
-  }  
+  }
+  
   .img-div-container {
     display: flex;
-  }  
+  }
+  
   .vendidos {
-    @include flex-container(flex, 70%, null, 1);
-    @include padded-container(20px, #fbfdff);  
+    flex: 70%;
+    padding: 20px;
+    background-color: #fbfdff;
+    order: 1;
+  
     img {
-      @include responsive-img(100%, 300px);
+      display: flex;
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
     }
-  }  
+  }
+  
   .estrella {
     width: 100%;
     height: 400px;
     padding: 5px;
-  }  
+  }
+  
   .info-estrella-1,
   .info-estrella-2 {
-    @include padded-container(10px, rgba(0, 0, 0, 0.116), 10px);
-  }  
+    background-color: rgba(0, 0, 0, 0.116);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
   // Testimonios styles
   .testimonios {
     display: grid;
@@ -64,10 +92,12 @@ main {
     padding: 15px;
     text-align: center;
     background-color: rgba(43, 163, 43, 0.534);
-  }  
+  }
+  
   .usuarios-test {
     img {
-      @include responsive-img(200px, 200px);
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       overflow: hidden;
     }

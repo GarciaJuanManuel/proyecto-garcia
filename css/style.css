@@ -17,20 +17,17 @@ main h1 {
 }
 
 aside {
-  display: flex;
   flex: 30%;
-  order: 2;
   padding: 20px;
   background-color: #aaabac;
-  border-radius: 0;
+  order: 2;
 }
 aside img {
   width: 100%;
-  height: auto;
   object-fit: contain;
   padding-left: 10px;
 }
-aside h2, aside h3 {
+aside h2 {
   font-size: 22px;
   padding: 10px;
 }
@@ -39,6 +36,7 @@ aside section {
 }
 aside h3 {
   font-size: 19px;
+  padding: 10px;
 }
 aside p {
   font-size: 15px;
@@ -56,18 +54,16 @@ aside p {
 }
 
 .vendidos {
-  display: flex;
   flex: 70%;
-  order: 1;
   padding: 20px;
   background-color: #fbfdff;
-  border-radius: 0;
+  order: 1;
 }
 .vendidos img {
+  display: flex;
   width: 100%;
   height: 300px;
   object-fit: contain;
-  padding-left: 0;
 }
 
 .estrella {
@@ -78,8 +74,8 @@ aside p {
 
 .info-estrella-1,
 .info-estrella-2 {
-  padding: 10px;
   background-color: rgba(0, 0, 0, 0.116);
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -95,8 +91,6 @@ aside p {
 .usuarios-test img {
   width: 200px;
   height: 200px;
-  object-fit: contain;
-  padding-left: 0;
   border-radius: 50%;
   overflow: hidden;
 }
