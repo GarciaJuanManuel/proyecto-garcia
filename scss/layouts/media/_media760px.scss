@@ -1,0 +1,59 @@
+@media (max-width: 760px) {
+    .texto-chico {
+      display: block;
+    }
+    .texto-grande {
+      display: none;
+    }
+    .testimonios {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      padding: 5px;
+      text-align: center;
+      background-color: rgba(43, 163, 43, 0.534);
+    }
+    .navbar-jm {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .navbar-jm ul {
+      padding: 0;
+    }
+    .navbar-jm li {
+      display: block;
+      margin-bottom: 0px;
+    }
+    .navbar-jm a {
+      display: block;
+    }
+    .navbar-jm a:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }  
+    aside {
+      flex: 100%;
+    }
+    .vendidos {
+      flex: 100%;
+    }
+    .section-nosotros {
+      display: grid;
+      width: 95%;
+      margin: auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "quienes-somos quienes-somos"
+        "vapeando1 vapeando1"
+        "quienes-somos-info quienes-somos-info"
+        "vapeando2 vapeando2";
+      gap: 10px;
+      padding: 15px;
+    }
+    .container-products {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+}

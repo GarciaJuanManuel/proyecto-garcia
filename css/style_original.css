@@ -417,6 +417,27 @@ aside p{
 
 }
 
+
+@media (max-width: 760px) {
+
+    .texto-chico{
+        display: block;
+    }
+
+    .texto-grande{
+        display: none;
+    }
+
+    .testimonios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 5px;
+        text-align: center;
+
+        background-color:rgba(43, 163, 43, 0.534);
+    }
+
     .vendidos{
         
     }
@@ -472,29 +493,8 @@ aside p{
         gap: 20px;
         text-align: center;
     }
-
-
-
-@media (max-width: 760px) {
-
-    .texto-chico{
-        display: block;
-    }
-
-    .texto-grande{
-        display: none;
-    }
-
-    .testimonios{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-        padding: 5px;
-        text-align: center;
-
-        background-color:rgba(43, 163, 43, 0.534);
-    }
 }
+
 @media (max-width: 550px){
     header p{
         display: none;
