@@ -1,0 +1,43 @@
+.section-nosotros {
+        display: grid;
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "quienes-somos quienes-somos quienes-somos"
+            "vapeando1 quienes-somos-info vapeando2";
+        gap: 10px;
+        padding: 15px;
+    }
+.quienes-somos img {
+        height: 100px;
+        object-fit: contain;
+    }
+.section-nosotros img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.quienes-somos {
+        grid-area: quienes-somos;
+        height: 100px;
+        object-fit: contain;
+    }
+.vapeando1 {
+        grid-area: vapeando1;
+    }
+.vapeando1 img {
+        object-fit: contain;
+    }
+    .quienes-somos-info {
+        grid-area: quienes-somos-info;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: solid;
+}
+.vapeando2 {
+        grid-area: vapeando2;
+    }

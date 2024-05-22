@@ -1,0 +1,15 @@
+.titulo-tienda {
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.container-products img {
+    max-width: 100%;
+}
