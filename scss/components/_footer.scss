@@ -1,0 +1,30 @@
+$background-color: #171a21;
+$footer-color: #fff;
+$icon-size: 30px;
+$icon-margin-right: 10px;
+$padding: 20px;
+
+footer {
+    // position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color;
+    padding: $padding;
+    color: $footer-color;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .social-icons {
+            display: flex;
+            a {
+                margin-right: $icon-margin-right;
+            }
+            img {
+                width: $icon-size;
+                height: $icon-size;
+            }
+        }
+    }
+}

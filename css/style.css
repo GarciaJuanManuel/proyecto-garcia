@@ -295,6 +295,30 @@ header div {
   background-color: teal;
 }
 
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #171a21;
+  padding: 20px;
+  color: #fff;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-container .social-icons {
+  display: flex;
+}
+footer .footer-container .social-icons a {
+  margin-right: 10px;
+}
+footer .footer-container .social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 1440px) {
   .texto-chico {
     display: none;
@@ -393,6 +417,14 @@ header div {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     text-align: center;
+  }
+  .info-estrella-1 {
+    padding: 15px;
+    gap: 10px;
+  }
+  .info-estrella-2 {
+    padding: 15px;
+    gap: 10px;
   }
 }
 @media (max-width: 550px) {
