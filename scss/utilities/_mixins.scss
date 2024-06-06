@@ -1,0 +1,4 @@
+@mixin font-and-padding($font-size, $padding) {
+    font-size: $font-size;
+    padding: $padding;
+}
