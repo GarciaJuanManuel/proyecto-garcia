@@ -2,3 +2,14 @@
     font-size: $font-size;
     padding: $padding;
 }
+@mixin button-styles($bg-color, $hover-bg-color, $padding: 15px 10px) {
+    border: none;
+    background: none;
+    background-color: $bg-color;
+    color: black;
+    padding: $padding;
+    cursor: pointer;
+    &:hover {
+    background-color: $hover-bg-color;
+    }
+}

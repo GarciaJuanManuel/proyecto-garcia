@@ -249,22 +249,18 @@ header div {
 .product {
   border-radius: 10px;
 }
-
 .product:hover {
   box-shadow: 0 10px 20px rgba(105, 104, 104, 0.2);
 }
-
 .product img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   transition: all 0.5s;
 }
-
 .product figure {
   overflow: hidden;
 }
-
 .product:hover img {
   transform: scale(1.2);
 }
@@ -276,12 +272,6 @@ header div {
   flex-direction: column;
   gap: 10px;
 }
-
-.precio {
-  font-size: 18px;
-  font-weight: 900;
-}
-
 .info-product button {
   border: none;
   background: none;
@@ -290,9 +280,13 @@ header div {
   padding: 15px 10px;
   cursor: pointer;
 }
-
 .info-product button:hover {
   background-color: teal;
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: 900;
 }
 
 body {
